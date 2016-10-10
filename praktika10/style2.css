@@ -1,0 +1,36 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+table
+{
+    border-width: 1px;
+    border-color: lightgreen;
+    color: #303030;
+    font-size: 11px;
+}
+td
+{
+    border-width: 0px;
+}
+img
+{
+    width: 370px;
+    height: 450px;
+    border: 1px solid black;
+}
+.verh
+{
+    font-size: 16px;
+    border-width: 1px;
+    border-color: green;
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+.cls
+{
+    background-color: darkgrey;
+    border-color: darkgrey;
+}
