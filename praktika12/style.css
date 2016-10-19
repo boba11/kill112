@@ -2,14 +2,14 @@
 height: 300px;
 width: 600px;
 margin: 0 auto;
-background-color: #DDF0FA;
+background-color: #9dddea;
 border: 1px solid gray;
 margin-top: 180px;
 }
 			
 .auto{
 float: right;
-background-color: #BFE2F5;
+background-color: #cee1e5;
 height: 200px;
 width: 300px;
 border: 1px solid gray;
@@ -32,7 +32,7 @@ margin-left: 30px;
 
 h2{
 font-size: 30pt;
-margin-left: 300px;
+margin-left: 280px;
 color: red;
 }
 
