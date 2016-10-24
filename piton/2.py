@@ -4,5 +4,6 @@ def sortirovka(q):
 	for char in sort:
 		otvet = otvet + str(char)
 	print otvet;
-a = raw_input("vvedite shiclo: ")
+a = raw_input("vvedite schislo: ")
 sortirovka(a)
+
