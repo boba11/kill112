@@ -1,35 +1,46 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="<?php echo SERVER; ?>style/style.css" />
-    <title><?php echo $title; ?></title>
-</head>
-<body>
-<header>
-    <img src="<?php echo SERVER; ?>images/header.jpg" class="hdr-bg"/>
-    <img src="<?php echo SERVER; ?>images/logo.png" class="homer"/>
-    <?php echo $menu; //MENUHA ?>
-</header>
-<div class="content">
-    <div class="parag">
-        <h2 class="in-parag">Статьи</h2>
-    </div>
-    <?php echo $content_for_layout; ?>
-</div>
-<div style="clear: both;"></div>
-<footer>
-    <div class="foo">
-
-    </div>
-    <div class="foo">
-
-    </div>
-    <div class="foo">
-
-    </div>
-</footer>
-</body>
-</html>
+<!DOCTYPE HTML>
+<HTML>
+    <head>
+		<TITLE>13.2</TITLE>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="<?php echo SERVER;?>style/style.css" type="text/css" />
+    </head>
+	<body>
+		<div class="header">
+			<div class="menu_container">
+				<nav class="menu">
+					<ul>
+						<li><?php echo $menu; //MENUHA ?></li>
+						<li><a href="#">Page 2</a></li>
+						<li><a href="#">Page 3</a></li>
+						<li><a href="#">Page 4</a></li>
+						<li><a href="#">Page 5</a></li>
+						<li><a href="#">Page 6</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="content">
+			<div class="left">
+				<div class="four_image">
+					<div><img src="http://www.cooksa.ru/upload/recipes/images/recipes3630-step6.jpg"/></div>
+					<div><img src="http://www.cooksa.ru/upload/recipes/images/recipes3630-step6.jpg"/></div>
+					<div><img src="http://www.cooksa.ru/upload/recipes/images/recipes3630-step6.jpg"/></div>
+					<div><img src="http://www.cooksa.ru/upload/recipes/images/recipes3630-step6.jpg"/></div>
+				</div>
+				<div class="left_bottom_block">Здесь будет текст</div>
+				<div class="left_bottom_block">Здесь будет текст</div>
+			</div>
+			<div class="right">
+				<div class="right_block"><?php echo $content_for_layout; ?></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="footer">
+			<div class="footer_content">
+				<div>низ</div>
+			</div>
+		</div>
+	</body>
+</HTML>
 
