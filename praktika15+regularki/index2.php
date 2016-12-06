@@ -41,9 +41,9 @@
   
        <?
         if(isset($_POST['log']) && isset($_POST['pwd']) && isset($_POST['pwd1']) && isset($_POST['surname']) && isset($_POST['name'])
-         && isset($_POST['sex']) && isset($_POST['email']) && isset($_POST['age']) && isset($_POST['country'])
+         && isset($_POST['sex']) && isset($_POST['email']) && isset($_POST['age'])
         && !empty($_POST['log']) && !empty($_POST['pwd']) && !empty($_POST['pwd1']) && !empty($_POST['surname']) && !empty($_POST['name'])
-         && !empty($_POST['sex']) && !empty($_POST['email']) && !empty($_POST['age']) && !empty($_POST['country']))
+         && !empty($_POST['sex']) && !empty($_POST['email']) && !empty($_POST['age']))
         {
             if(!preg_match('/^[a-z0-9]{3,}+$/i',$_POST['log']))
             {
@@ -85,10 +85,10 @@
                 if(!preg_match('/^[A-Za-z0-9]+@[a-z0-9]+\.[a-z]/i',$_POST['email']))
             {
                echo '<span>Неправильно задана почта.<br>
-                          Например: VlAd123@kait20.ru<br></span>';
+                          Например: name@host.ru<br></span>';
              }
             else
-                if(!preg_match('/^[0-9]{1,3}+$/',$_POST['age']))
+                if(!preg_match('/^[0-9]{1,2}+$/',$_POST['age']))
             {
               echo '<span>Неправильно указал возраст<br>
                           Только цифры.<br></span>';
@@ -108,8 +108,7 @@
                   fclose($file);
                   if($pd == false)//Если логина не нашли
                   {
-                    $str = $_POST['log'].'|'.$_POST['pwd'].'|'.$_POST['surname'].'|'.$_POST['name'].'|'.$_POST['midname'].'|'.$_POST['sex'].'|'.$_POST['email'].'|'.$_POST['age'].'|'
-                    .$_POST['country'].'|'.$_POST['about'];
+                    $str = $_POST['log'].'|'.$_POST['pwd'].'|'.$_POST['surname'].'|'.$_POST['name'].'|'.$_POST['midname'].'|'.$_POST['sex'].'|'.$_POST['email'].'|'.$_POST['age'].'|'.$_POST['about'];
                     $file = file_put_contents('logins.txt', $str.PHP_EOL , FILE_APPEND | LOCK_EX);
                     header("Refresh: 3;  url=index.php");
                     echo '<span>Регистрация успешна!<br></span>';
@@ -119,7 +118,7 @@
               else echo '<span>Пароли не совпадают.<br></span>';
             }
           }
-            else if(isset($_POST['country'])) echo '<span>Введены не все данные.<br></span>';
+           
           ?>
 
         <input class="knonka" type="submit" value="Регистрация"/>
