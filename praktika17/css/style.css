@@ -1,0 +1,46 @@
+body{
+	padding: 0;
+	margin: 0;
+	
+	position: relative;
+	font-size: 25px;
+	background-image: url('http://user-master.org/media/k2/items/cache/82558bd755d4bf64f8b1324b360ed554_XL.jpg');
+}
+.container{
+	width: 500px;
+	margin: 2% auto;
+}
+form{
+	background: RGBA(250,250,250, 0.3);
+	border-radius: 5px;
+
+	text-align: center;
+
+	padding: 10px;
+	padding-bottom: 25px;
+}
+form div{
+	margin-top: 10px;
+}
+input, select, textarea{
+	border-radius: 5px;
+	border: 1px solid #fff;
+	outline:none;
+
+	min-width: 300px;
+	font-size: 25px;
+}
+textarea{
+	font-size: 17px;
+	min-height: 300px;
+}
+input:focus{
+	border: 1px solid #98c6ff;
+}
+input[type="submit"]{
+	margin-top: 20px;
+}
+.red{
+	color: red;
+	font-weight: bold;
+}
